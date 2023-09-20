@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
 
-    public float thrustForce = 10f;
-    public float rotationSpeed = 120f;
+    public float thrustForce = 200f;
+    public float rotationSpeed = 30000f;
 
     public GameObject gun, bulletPrefab;
 
@@ -80,10 +80,6 @@ public class Player : MonoBehaviour
         {
             PUNTUACION = 0;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
-        else
-        {
-            Debug.Log("Hola");
         }
 
     }
