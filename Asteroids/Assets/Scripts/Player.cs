@@ -18,7 +18,6 @@ public class Player : MonoBehaviour
 
     private Rigidbody _rigid;
 
-    // Start is called before the first frame update
     void Start()
     {
         _rigid = GetComponent<Rigidbody>();
@@ -26,7 +25,6 @@ public class Player : MonoBehaviour
         xLimit = yLimit * Screen.width / Screen.height;
     }
 
-    // Update is called once per frame
     void Update()
     {
 

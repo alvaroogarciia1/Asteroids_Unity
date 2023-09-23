@@ -12,7 +12,6 @@ public class EnemySpawner : MonoBehaviour
     public float maxLifeTime = 4f;
     private float spawnNext = 0;
 
-    // Update is called once per frame
     void Update()
     {
         if (Time.time > spawnNext)
