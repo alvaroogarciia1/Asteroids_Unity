@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Bullet
     - EnemySpawner
+    - MenuPausa
     - Player
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -13,16 +14,34 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   serializedClasses:
     UnityEngine.CoreModule:
+    - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
+    - UnityEngine.Events.PersistentListenerMode
     UnityEngine.UI:
+    - UnityEngine.UI.AnimationTriggers
+    - UnityEngine.UI.Button/ButtonClickedEvent
+    - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.FontData
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
-  methodsToPreserve: []
+    - UnityEngine.UI.Navigation
+    - UnityEngine.UI.SpriteState
+  methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuPausa
+    methodName: Reaunudar
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuPausa
+    methodName: Cerrar
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuPausa
+    methodName: Pausa
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -50,21 +69,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2550}
+      Script: {instanceID: 1588}
     - Class: 114
-      Script: {instanceID: 2748}
+      Script: {instanceID: 2576}
     - Class: 114
-      Script: {instanceID: 3792}
+      Script: {instanceID: 2774}
     - Class: 114
-      Script: {instanceID: 4982}
+      Script: {instanceID: 3054}
     - Class: 114
-      Script: {instanceID: 5180}
+      Script: {instanceID: 3818}
     - Class: 114
-      Script: {instanceID: 5216}
+      Script: {instanceID: 5008}
     - Class: 114
-      Script: {instanceID: 5478}
+      Script: {instanceID: 5206}
     - Class: 114
-      Script: {instanceID: 5934}
+      Script: {instanceID: 5502}
+    - Class: 114
+      Script: {instanceID: 5958}
+    - Class: 114
+      Script: {instanceID: 7720}
+    - Class: 114
+      Script: {instanceID: 23996}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -642,12 +667,6 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
-      Hash: 46f1baf94d31942c529a2960e4641647
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Bullet
-  - hash:
-      serializedVersion: 2
       Hash: f6831ac80ec81c5d5b370c0ed0fee997
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
@@ -928,7 +947,19 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 46f1baf94d31942c529a2960e4641647
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Bullet
+  - hash:
+      serializedVersion: 2
+      Hash: 6d938bba02317c00d1636e762ac431d9
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MenuPausa
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/Alvar/Proyectos Unity/Asteroids/Juego Terminado/Asteroids.exe
+  playerPath: D:/UPM INFORMATICA APUNTES/Unity Editor/Asteroids/Juego Terminado/Asteroids.exe
